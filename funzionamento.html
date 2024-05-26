@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzionamento - Funzioni Hash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FUNZIONI HASH NELLA CRITTOGRAFIA</h1>
+    </header>
+    <nav>
+        <a href="index.html"><strong>HOME</strong></a>
+        <a href="lunghezza-output.html"> <strong>LUNGHEZZA OUTPUT</strong></a>
+        <a href="funzionamento.html"> <strong>FUNZIONAMENTO</strong></a>
+        <a href="utilita.html"> <strong>UTILITÀ</strong></a>
+        <a href="scenario-password.html"> <strong>SICUREZZA PASSWORD</strong></a>
+        <a href="attacchi-preimmagine.html"> <strong>ATTACCHI DI PREIMMAGINE</strong></a>
+        <a href="criptoanalisi.html"> <strong>CRIPTOANALISI</strong></a>
+    </nav>
+    <div class="container">
+        <section class="large-text" id="funzionamento">
+            <h2 class="center-text">Qual'è il loro Funzionamento?</h2>
+            <p class="justified-text">Le funzioni HASH trasformano, in maniera <b>DETERMINISTICA</b>, dati in un formato "HASH" <b>UNIVOCO = IMPRONTA</b>. Ecco come funziona un HASH:</p>
+            <ul>
+                <li class="justified-text">L'algoritmo prende un INPUT (<u>impronta del messaggio</u>) e lo suddivide in <b>BLOCCHI di dimensione fissa</b>.</li>
+                <li class="justified-text">Ogni blocco è sottoposto ad OPERAZIONI MATEMATICHE, tra cui <b><a href="https://doc.arcgis.com/it/arcgis-online/analyze/bitwise-xor-function.htm" target="_blank">XOR</a></b>, <b>ROTAZIONI</b> e <b>SOSTITUZIONI</b>.</li>
+                <li class="justified-text">L'output finale è un <b>VALORE HASH DI LUNGHEZZA FISSA</b> che rappresenta l'intero set di input.</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container">
+        <section class="large-text" id="particolarità">
+            <h2 class="center-text"><strong>Quali sono le Particolarità?</strong></h2>
+            <ul>
+                <li class="justified-text"><strong><u>UNIDIREZIONALITÀ:</u></strong> Le funzioni HASH sono progettate per essere <b>facili da calcolare</b> in una direzione partendo dai dati originali. Tuttavia, il processo inverso è computazionalmente difficile.</li>
+                <p><li class="justified-text"><strong><u>COLLISIONI:</u></strong> Una collisione si verifica quando: <b>due input diversi => stesso output HASH</b>. Le buone funzioni HASH <u>minimizzano le collisioni</u> che <b>compromettono la sicurezza</b>.</li></p>
+                <p><li class="justified-text"><strong><u>UNIFORMITÀ DELLA DISTRIBUZIONE:</u></strong> Le funzioni HASH distribuiscono <b>uniformemente l'output</b> per evitare vulnerabilità e garantire sicurezza. L'assenza porterebbe alcuni HASH ad essere <b>più probabili</b>. Questo comporta aumento di <b>COLLISIONI</b> o aumento di <b>ATTACCHI CRITTOGRAFICI</b>.</li></p>
+                <p><li class="justified-text"><strong><u>UTILITÀ:</u></strong> Le funzioni HASH trovano <b>sicurezza</b> nei sistemi informatici.</li></p>
+            </ul>        
+        </section>    
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Funzioni Hash nella Crittografia. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

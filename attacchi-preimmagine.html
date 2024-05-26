@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attacchi di Preimmagine - Funzioni Hash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FUNZIONI HASH NELLA CRITTOGRAFIA</h1>
+    </header>
+    <nav>
+        <a href="index.html"><strong>HOME</strong></a>
+        <a href="lunghezza-output.html"> <strong>LUNGHEZZA OUTPUT</strong></a>
+        <a href="funzionamento.html"> <strong>FUNZIONAMENTO</strong></a>
+        <a href="utilita.html"> <strong>UTILITÀ</strong></a>
+        <a href="scenario-password.html"> <strong>SICUREZZA PASSWORD</strong></a>
+        <a href="attacchi-preimmagine.html"> <strong>ATTACCHI DI PREIMMAGINE</strong></a>
+        <a href="criptoanalisi.html"> <strong>CRIPTOANALISI</strong></a>
+    </nav>
+    <div class="container">
+        <section class="large-text" id="attacchi-preimmagine">
+            <h2 class="center-text">Attacchi di Preimmagine</h2>
+            <p class="center-text">Un ATTACCO DI PREIMMAGINE è una tecnica utilizzata per <b>trovare un input che corrisponda a un HASH dato</b>. Questo attacco si divide in due categorie principali:</p>
+            <ul>
+                <li class="justified-text"><b><u>Preimmagine Semplice:</u></b> Data una funzione HASH, si <b>trova un INPUT</b> che <u>produce quello stesso HASH</u>.</li>
+                <li class="justified-text"><b><u>Seconda Preimmagine</u></b>: Data un input e il suo HASH, si <b>trova un INPUT differente</b> che <u>produce lo stesso HASH</u>.</li>
+            </ul>
+            <p class="justified-text">Le <b>funzioni HASH SICURE</b> sono progettate per rendere questi <b>attacchi COMPUTAZIONALMENTE IMPOSSIBILI</b>.</p>
+        </section>
+    </div>
+    <div class="container">
+        <section class="large-text" id="attacchi-preimmagine">
+            <h2 class="center-text">Come funziona un Attacco di Preimmagine?</h2>
+            <p class="justified-text">La <b>RESISTENZA ALLA PREIMMAGINE</b> di una funzione HASH indica la <b>difficoltà a trovare un INPUT</b> per produrre uno specifico output HASH. La <b>funzione è resistente</b> se è difficile trovare i dati originali partendo dall'HASH</p>
+            <p class="justified-text">Gli <b>attacchi di preimmagine</b> cercano un input che produce uno specifico valore di HASH. L'attaccante ha un <b>HASH di destinazione</b> e trova un INPUT che produce quell'esatto HASH.</p>
+            <p class="center-text">Es: Un utente ha una password HASHATA e l’attaccante cerca la password originale. L'attaccante, con l'attacco di preimmagine, cerca una password che produca lo stesso HASH.</p>
+            <p class="center-text"><b>Una funzione HASH sicura rende difficile trovare un input che produca uno specifico HASH.</b></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Funzioni Hash nella Crittografia. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
